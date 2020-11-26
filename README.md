@@ -1,5 +1,5 @@
 # frozen-graph-training
-This code offers the possibility of training deep learning image classiers in TensorFlow 2 using VGG-16 trained on ImageNet as a base network. Data augmentation and resampling are used by default. The final model is finally stored as frozen graph and can be used for inferencing in TensorFlow 1. The example images in the image folders are taken from [1].
+This code offers the possibility of training deep learning based image classifiers in TensorFlow 2 using VGG-16 trained on ImageNet as a base network. Data augmentation and resampling are used by default. The final model is finally stored as frozen graph and can be used for inferencing in TensorFlow 1. The example images in the image folders are taken from [1].
 
 ## Setup
 Clone the repository:
