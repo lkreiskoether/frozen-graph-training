@@ -4,7 +4,6 @@ import os
 os.environ['TF_FORCE_GPU_ALLOW_GROWTH'] = 'true'
 import tensorflow as tf
 from tensorflow.python.framework.convert_to_constants import convert_variables_to_constants_v2
-import matplotlib.pyplot as plt
 import time
 import datetime
 import numpy as np
