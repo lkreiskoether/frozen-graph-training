@@ -9,7 +9,7 @@ git clone https://github.com/lkreiskoether/frozen-graph-training.git
 
 ## General usage
 ```sh
-python grad-cam-analysis.py <path to folder containing image folders> <path folder for model storing> '[<x-dim images>,<y-dim images>]' <number of epochs> <learning rate> <batch size> <data split for validation & testing> <data split for testing based on data split for validation & testing> 
+python fg_training.py <path to folder containing image folders> <path folder for model storing> '[<x-dim images>,<y-dim images>]' <number of epochs> <learning rate> <batch size> <data split for validation & testing> <data split for testing based on data split for validation & testing> 
 ```
 
 ## Example usage
