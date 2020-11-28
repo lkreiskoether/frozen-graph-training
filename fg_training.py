@@ -24,9 +24,10 @@ checkpoint_directory = log_dir + '/training_checkpoints'
 image_shape = list(map(int, sys.argv[3].strip('[]').split(',')))
 input_shape = (image_shape[0], image_shape[1], 3)
 classes = [name for name in os.listdir(data_path) if
-            os.path.isdir(data_path + '/' + name)]
+           (os.path.isdir(data_path + '/' + name) and (not 'training_checkpoints' in name))]
 print(classes)
 num_classes = len(classes)
+print(num_classes)
 
 # parameters for training
 epochs = int(sys.argv[4])
