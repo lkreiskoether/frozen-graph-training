@@ -162,14 +162,16 @@ log_time = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
 batch_counter = 0
 
 datagen = tf.keras.preprocessing.image.ImageDataGenerator(
-        featurewise_center=False, samplewise_center=False,
-        featurewise_std_normalization=False, samplewise_std_normalization=False,
-        zca_whitening=False, zca_epsilon=1e-06, rotation_range=360, width_shift_range=0.0,
-        height_shift_range=0.0, brightness_range=[0.8, 1.2], shear_range=0.0, zoom_range=[0.8, 1.2],
-        channel_shift_range=0.0, fill_mode='constant', cval=0.0, horizontal_flip=True,
-        vertical_flip=True, preprocessing_function=transform,
-        data_format=None, validation_split=0.0, dtype=None
-    )
+    rotation_range=360,
+    brightness_range=[0.95, 1.05],
+    width_shift_range=0.01,
+    height_shift_range=0.01,
+    zoom_range=[0.95, 1.05],
+    horizontal_flip=True,
+    vertical_flip=True,
+    preprocessing_function=transform
+)
+
 
 for epoch in range(epochs):
     train_dataset_org.shuffle(len(X_train)).batch(batch_size)
