@@ -14,7 +14,7 @@ python fg_training.py <path to folder containing image folders> <path folder for
 
 ## Example usage
 ```sh
-python fg_training.py mvtec mvtec '[100,100]' 3 0.0001 4 0.5 0.5
+python fg_training.py mvtec mvtec '[448,448]' 50 0.00001 8 0.3 0.5
 ```
 
 ## Acknowledgements
